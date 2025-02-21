@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7407606028705327298}
   - component: {fileID: 7748151122468115204}
   - component: {fileID: 8561888323489256945}
+  - component: {fileID: 3713979322109845928}
   m_Layer: 0
   m_Name: EggBullet
   m_TagString: Untagged
@@ -148,3 +149,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3713979322109845928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752241087412314557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8df9ada7213074794127b09f8ba9ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
