@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerContactHandler : MonoBehaviour
 {
 
     public Image itemImage;
     public PlayerAudioController audioController;
+    public string goToLevel = "Level2";
 
     bool canWinLevel = false;
 
@@ -15,7 +17,7 @@ public class PlayerContactHandler : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("GAME OVER");
+            SceneManager.LoadScene("GameOver");
         }
     }
 
@@ -34,7 +36,7 @@ public class PlayerContactHandler : MonoBehaviour
         {
             if (canWinLevel)
             {
-                Debug.Log("VOCÊ GANHOU");
+                SceneManager.LoadScene(goToLevel);
             }
             else
             {
